@@ -539,7 +539,7 @@ In this step, we’ll validate the full end-to-end functionality of our applicat
   - Look for your frontend distribution (it was created for your S3 bucket)
   - In the list, under Domain name, copy the full value
   ```bash
-    👉 https://ddt2rqwv0i2k7.cloudfront.net (Paste that into your browser and press Enter)
+    https://ddt2rqwv0i2k7.cloudfront.net (Paste that into your browser and press Enter)
  
 - Let us verify frontend connects to backend via ALB and ensure backend communicates with RDS.
     - Trigger a Backend Call
