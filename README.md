@@ -1,4 +1,4 @@
-# Dockerization & Deployment of a Full-stack Banking App Using AWS ECR, EC2 & Terraform
+# “Dockerized Full-Stack Banking App – React, Node.js, PostgreSQL”
 
 ## Introduction
 
