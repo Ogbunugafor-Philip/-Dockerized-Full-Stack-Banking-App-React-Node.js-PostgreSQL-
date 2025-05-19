@@ -154,7 +154,9 @@ docker compose version
 In the server directory, we would create a file named Dockerfile. The file defines how to package your backend application into a Docker container.
 
 - Paste the below script into the Dockerfile created
-  code reference
+  
+  #### code reference [Dockerfile](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/fullstack_banking_app-master/server/Dockerfile)
+
 
 - This script would do the following;
   - Pulls a Node.js environment
@@ -168,7 +170,8 @@ In the server directory, we would create a file named Dockerfile. The file defin
 
   Paste the below script into the Dockerfile created
 
-  Code reference
+  #### Code reference [Docker file](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/fullstack_banking_app-master/Dockerfile)
+
 
 - This Dockerfile will:
   
@@ -185,7 +188,8 @@ In the server directory, we would create a file named Dockerfile. The file defin
   
   - We would paste the below script in our created docker-compose.yml file
 
-    Code Reference
+    #### Code Reference [docker_compose](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/fullstack_banking_app-master/docker-compose.yml)
+
     
 - The above script would allow:
   - PostgreSQL runs on port 5432 and stores data in a named volume.
@@ -311,7 +315,8 @@ In this step, we’ll use Terraform to set up the core AWS infrastructure. This 
  ![image](https://github.com/user-attachments/assets/44629324-9a89-4051-bfc9-e9d84bcba0e6)
 
 - In the terraform folder, create a file named provider.tf and paste the below script in it
-  Code Reference
+  #### Code Reference [provider.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/provider.tf)
+
   
 - In our terraform folder, we would run the command
 ```bash
@@ -327,9 +332,12 @@ to initialize the backend, download the AWS provider and prepare Terraform to us
   
 Update the files with the code reference
 
-- Next, update the main.tf in the terraform root with the below;
+[main.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/vpc/main.tf)
 
-  Script Reference
+[variables.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/vpc/variables.tf)
+
+[outputs.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/vpc/outputs.tf)
+
 
 - In the modules folder, create a folder named security_groups. In the security_groups folder, create three files;
   - main.tf
@@ -338,9 +346,13 @@ Update the files with the code reference
 
 Update the files with the code reference
 
-- Next, update the main.tf in the terraform root with the below;
+[main.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/security_groups/main.tf)
 
-  Script Reference
+[variables.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/security_groups/variables.tf)
+
+[outputs.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/security_groups/outputs.tf)
+
+
 
 - In the modules folder, create a folder named launch_template. In the launch_template folder, create three files;
   - main.tf
@@ -349,9 +361,14 @@ Update the files with the code reference
 
 Update the files with the code reference
 
-- Next, update the main.tf in the terraform root with the below;
+[main.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/launch_template/main.tf)
 
-  Script Reference
+[variables.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/launch_template/variables.tf)
+
+
+[outputs.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/launch_template/outputs.tf)
+
+
 
 - In the modules folder, create a folder named rds. In the rds folder, create three files;
   - main.tf
@@ -359,6 +376,14 @@ Update the files with the code reference
   - outputs.tf
 
 Update the files with the code reference
+
+[main.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/rds/main.tf)
+
+[variables.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/rds/variables.tf)
+
+[outputs.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/rds/outputs.tf)
+
+
 
 - Next, update the main.tf in the terraform root with the below;
 
@@ -371,9 +396,13 @@ Update the files with the code reference
 
 Update the files with the code reference
 
-- Next, update the main.tf in the terraform root with the below;
+[main.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/alb/main.tf)
 
-  Script Reference
+[variables.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/alb/variables.tf)
+
+[outputs.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/alb/outputs.tf)
+
+
 
 - In the modules folder, create a folder named asg. In the asg folder, create three files;
   - main.tf
@@ -382,10 +411,12 @@ Update the files with the code reference
 
 Update the files with the code reference
 
+[main.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/asg/main.tf)
 
-- Next, update the main.tf in the terraform root with the below;
+[variables.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/asg/variables.tf)
 
-  Script Reference
+[outputs.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/asg/outputs.tf)
+
 
 - In the modules folder, create a folder named s3_cloudfront. In the s3_cloudfront folder, create three files;
   - main.tf
@@ -394,9 +425,21 @@ Update the files with the code reference
 
 Update the files with the code reference
 
+[main.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/s3_cloudfront/main.tf)
+
+[variables.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/s3_cloudfront/variables.tf)
+
+[outputs.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/modules/s3_cloudfront/outputs.tf)
+
+
+
+
 - Next, update the main.tf in the terraform root with the below;
 
-  Script Reference
+ Script Reference
+
+ [main.tf](https://github.com/Ogbunugafor-Philip/-Dockerized-Full-Stack-Banking-App-React-Node.js-PostgreSQL-/blob/main/terraform/main.tf)
+
 
 Now that we have finished all the infrastructure provisioning, we need to build in our AWS.
 These are the command we would run;
